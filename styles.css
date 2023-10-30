@@ -1,0 +1,98 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-container {
+    background-color: #ffffff;
+    height: 100%; /*Make it fill the entire viewport hegiht */
+    width: 100%;
+    background-image: linear-gradient(60deg, #59d388, #5ee6e6, #d88cff);
+    background-size: 600% 600%;
+    animation: bgAnimatedGradient 15s infinite linear;
+    position: relative;
+}
+
+.image-container {
+    text-align: center; /*Center the image horizontally within the container*/
+}
+
+img {
+    width: 400px;
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 0.5cm;
+    font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+    letter-spacing: normal;
+    font-size: 2cm;
+    color: white;
+    margin: 0; /* Remove any default margin */
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: normal;
+    font-size: 30px;
+    color: white;
+    margin: 0; /* Remove any default margin */
+}
+
+.button-container {
+    text-align: center;
+    position: absolute;
+    bottom: 20px; /*Adjust as needed to position the buttons */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+.Button1, .Button2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 15px; /* Adjust as needed */
+    border: none;
+    border-radius: 20px; /*Rounded rectangle */
+    background-color: rgb(35, 64, 73); /* Background color for "Yes" and "No" buttons */
+    color: white; /*Text color */
+    margin: 10px; /* Ajust as needed */
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+}
+
+h3 {
+    text-align: center;
+    padding-top: 1cm;
+    padding-bottom: 0.05cm;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: normal;
+    font-size: 1cm;
+    color: white;
+    margin: 0; /* Remove any default margin */
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: normal;
+    font-size: 1cm;
+    color: white;
+    margin: 0; /* Remove any default margin */
+}
+
+
+@keyframes bgAnimatedGradient {
+    0% {
+        background-position: 0 85%;
+    }
+    50% {
+        background-position: 100% 20%;
+    }
+    100% {
+        background-position: 0 85%;
+    }
+}
